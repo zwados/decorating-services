@@ -1,0 +1,27 @@
+.logo {
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+
+    &__image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+
+        &--up {
+            font-size: 2rem;
+        }
+
+        &--down {
+            font-size: 1rem;
+        }
+    }
+}

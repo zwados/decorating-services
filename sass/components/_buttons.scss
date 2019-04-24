@@ -1,0 +1,52 @@
+.btn-rounded {
+    text-decoration: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-weight: 600;
+    box-shadow: $shadow-light;
+    border: 2px solid transparent;
+    transition: all .2s ease;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    &--primary {
+        color: $color-light;
+        background-image: linear-gradient(to right bottom, $color-primary, $color-tertiary);
+
+
+        &:hover,
+            {
+            color: $color-primary;
+            background-image: linear-gradient(to right bottom, $color-light, white);
+            border: 2px solid $color-primary;
+        }
+    }
+
+    &--light {
+        color: $color-secondary;
+        background-image: linear-gradient(to right bottom, $color-grey-light, #9b9b9b);
+        border: 2px solid $color-grey-light;
+
+
+        &:hover,
+            {
+            color: $color-grey-light;
+            background-image: linear-gradient(to right bottom, $color-secondary, #9b9b9b);
+            border: 2px solid $color-grey-light;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-1px) scale(1.025);
+        box-shadow: 0 0.25rem 1rem #888;
+    }
+
+    &:target,
+    &:active {
+        transform: translateY(0.25px) scale(0.975);
+        box-shadow: 0 0rem 0.25rem #888;
+    }
+}

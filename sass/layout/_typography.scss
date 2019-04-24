@@ -1,0 +1,46 @@
+.header-primary {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: $color-grey-light;
+}
+
+.header-secondary {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3rem;
+
+    @include hideElement;
+
+    &--light {
+        color: $color-grey-light;
+    }
+
+    &:before {
+        content: "";
+        border-bottom: 4px solid $color-primary;
+        width: 9rem;
+        height: 4.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+}
+
+.header-tertiary {
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    &--light {
+        color: $color-light;
+    }
+
+    &--orange {
+        color: $color-primary;
+    }
+}

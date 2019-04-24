@@ -1,0 +1,66 @@
+.navigation {
+    box-shadow: 0 0 2rem $color-secondary;
+
+    &__nav {
+        display: flex;
+        height: 7rem;
+        justify-content: center;
+        @include flexContainer;
+        width: 120rem;
+    }
+
+    &__list {
+        display: flex;
+        flex: .75;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    &__item {}
+
+    &__link {
+        box-sizing: content-box;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom .2s;
+        color: $color-secondary;
+
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:target {
+            border-bottom: 2px solid $color-primary;
+
+        }
+
+    }
+
+
+    &__link--btn {
+        background-color: $color-primary;
+        color: $color-grey-light;
+        padding: 1rem 1.4rem;
+        font-size: 1.2rem;
+        border-radius: 3px;
+        box-shadow: $shadow-light;
+        transition: all .2s;
+
+
+        &:hover {
+            transform: translateY(-1px) scale(1.025);
+            box-shadow: 0 0.25rem 1rem #888;
+        }
+
+        &:target,
+        &:active {
+            transform: translateY(0.25px) scale(0.975);
+            box-shadow: 0 0rem 0.25rem #888;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex: 0 1 100%;
+        justify-content: space-evenly;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+
+        &--1-of-2 {
+            flex: 0 1 45%;
+
+        }
+
+        &--1-of-1 {
+            flex: 0 1 93.333%;
+        }
+    }
+
+    &__label {
+        margin: .2rem 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        padding: 1.2rem 2rem;
+        font-size: 1.5rem;
+        border: 2px solid $color-grey-medium;
+        border-radius: 3px;
+        background-color: $color-grey-light;
+        font-family: 'Segoe UI';
+        outline: none;
+
+        &:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+
+        &:focus {
+            border: 2px solid $color-primary;
+        }
+    }
+}
