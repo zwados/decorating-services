@@ -87,7 +87,7 @@ body {
 
 .header {
   max-width: 80rem;
-  margin-top: 10rem; }
+  margin-top: 16rem; }
 
 .section-about {
   background-color: #eeee;
@@ -395,6 +395,42 @@ body {
     .navigation__link--btn:target, .navigation__link--btn:active {
       transform: translateY(0.25px) scale(0.975);
       box-shadow: 0 0rem 0.25rem #888; }
+
+.modalbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  height: 100%;
+  width: 100%; }
+
+.modal {
+  background-image: radial-gradient(#e66f00, rgba(226, 83, 0, 0.9), rgba(73, 73, 73, 0.9) 90%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 1s ease; }
+
+.popup {
+  background-color: #eeee;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  opacity: 0;
+  transition: all 1s ease; }
+  .popup__exit-icon {
+    position: relative;
+    margin-right: 0;
+    color: #494949;
+    font-size: 40px;
+    padding: 1rem; }
 
 .logo__box {
   display: flex;

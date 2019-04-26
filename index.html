@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bygg Med Wojtek &mdash; professional carpentry, decorating, renovations</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -97,7 +99,7 @@
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos
                         voluptate blanditiis tempora modi inventore asperiores, maiores quaerat sapiente corrupti optio
                         aliquam atque cum libero error qui nobis deleniti ab?</p>
-                    <a href="#" class="about__btn">My Experience &rarr;</a>
+                    <a class="about__btn popup__button" id="experience">My Experience &rarr;</a>
                 </div>
 
                 <div class="about__item appear">
@@ -108,7 +110,7 @@
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos
                         voluptate blanditiis tempora modi inventore asperiores, maiores quaerat sapiente corrupti optio
                         aliquam atque cum libero error qui nobis deleniti ab?</p>
-                    <a href="#" class="about__btn">My offer &rarr;</a>
+                    <a class="about__btn popup__button" id="offer">My offer &rarr;</a>
                 </div>
 
                 <div class="about__item appear">
@@ -119,7 +121,7 @@
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos
                         voluptate blanditiis tempora modi inventore asperiores, maiores quaerat sapiente corrupti optio
                         aliquam atque cum libero error qui nobis deleniti ab?</p>
-                    <a href="#" class="about__btn">Our History &rarr;</a>
+                    <a class="about__btn popup__button" id="history">Our History &rarr;</a>
                 </div>
             </div>
 
@@ -137,7 +139,7 @@
                         <h3 class="header-tertiary header-tertiary--light projects__gallery-title">
                             Decorations
                         </h3>
-                        <a href="#" class="btn-rounded btn-rounded--light">gallery</a>
+                        <a class="btn-rounded btn-rounded--light popup__button" id="decorations">gallery</a>
                     </div>
                 </div>
                 <div class="projects__item projects__item--2 appear">
@@ -148,7 +150,7 @@
                         <h3 class="header-tertiary header-tertiary--light projects__gallery-title">
                             Bricks
                         </h3>
-                        <a href="#" class="btn-rounded btn-rounded--light">gallery</a>
+                        <a class="btn-rounded btn-rounded--light popup__button" id="bricks">gallery</a>
                     </div>
                 </div>
                 <div class="projects__item projects__item--3 appear">
@@ -159,7 +161,7 @@
                         <h3 class="header-tertiary header-tertiary--light projects__gallery-title">
                             painting
                         </h3>
-                        <a href="#" class="btn-rounded btn-rounded--light">gallery</a>
+                        <a class="btn-rounded btn-rounded--light popup__button" id="painting">gallery</a>
                     </div>
                 </div>
                 <div class="projects__item projects__item--4 appear">
@@ -170,7 +172,7 @@
                         <h3 class="header-tertiary header-tertiary--light projects__gallery-title">
                             renovating
                         </h3>
-                        <a href="#" class="btn-rounded btn-rounded--light">gallery</a>
+                        <a class="btn-rounded btn-rounded--light popup__button" id="renovating">gallery</a>
                     </div>
                 </div>
                 <div class="projects__item projects__item--5 appear">
@@ -181,7 +183,7 @@
                         <h3 class="header-tertiary header-tertiary--light projects__gallery-title">
                             tiling
                         </h3>
-                        <a href="#" class="btn-rounded btn-rounded--light">gallery</a>
+                        <a class="btn-rounded btn-rounded--light popup__button" id="tiling">gallery</a>
                     </div>
                 </div>
                 <div class="projects__item projects__item--6 appear">
@@ -192,7 +194,7 @@
                         <h3 class="header-tertiary header-tertiary--light projects__gallery-title">
                             Carpentry
                         </h3>
-                        <a href="#" class="btn-rounded btn-rounded--light">gallery</a>
+                        <a class="btn-rounded btn-rounded--light popup__button" id="carpentry">gallery</a>
                     </div>
                 </div>
             </div>
@@ -314,6 +316,95 @@
             </div>
         </footer>
     </section>
+
+    <!--POPUPS-->
+
+    <!--ABOUT SECTION-->
+
+    <!--Experience-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupExperience">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Experience-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupOffer">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--History-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupHistory">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--PROJECTS SECTION-->
+    <!--Decorations-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupDecorations">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Bricks-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupBricks">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Painting-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupPainting">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Renovating-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupRenovating">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Tiling-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupTiling">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Carpentry-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup" id="popupCarpentry">
+                <i class="far fa-times-circle popup__exit-icon"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/popup.js"></script>
     <script src="scripts/scrollTo.js"></script>
     <script src="scripts/elementAppear.js"></script>
     <script src="scripts/navigation.js"></script>
