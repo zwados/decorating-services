@@ -1,5 +1,5 @@
 .navigation {
-    box-shadow: 0 0 2rem $color-secondary;
+    box-shadow: $shadow-light;
 
     &__nav {
         display: flex;
@@ -25,6 +25,7 @@
         border-bottom: 2px solid transparent;
         transition: border-bottom .2s;
         color: $color-secondary;
+        cursor: pointer;
 
 
         &:link,

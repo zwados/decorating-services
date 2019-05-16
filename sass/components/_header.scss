@@ -7,7 +7,6 @@
     width: 100%;
     z-index: -2;
     overflow: hidden;
-    box-shadow: $shadow-dark;
 
     &__content {
         height: 100%;
@@ -127,12 +126,15 @@
     &__title {
         font-size: 1.5rem;
         text-transform: uppercase;
-        color: $color-primary;
+        color: $color-secondary;
+        font-weight: 800;
     }
 
     &__span {
         &--up {
             font-size: 1.3rem;
+            font-weight: 600;
+            color: $color-tertiary;
         }
 
         &--down {
@@ -148,7 +150,7 @@
     }
 
     &__icon {
-        fill: $color-grey-medium;
+        fill: $color-primary;
         height: 7rem;
         width: 7rem;
         display: inline-block;

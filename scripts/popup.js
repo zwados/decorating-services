@@ -64,3 +64,7 @@ const Painting = new Popup('popupPainting', 'painting');
 const Renovating = new Popup('popupRenovating', 'renovating');
 const Tiling = new Popup('popupTiling', 'tiling');
 const Carpentry = new Popup('popupCarpentry', 'carpentry');
+
+// Offer Section Object Instances
+
+const SectionOffer = new Popup('popupSectionOffer', 'myOffer');

@@ -45,6 +45,7 @@
         text-transform: uppercase;
         transition: all .2s;
         box-shadow: 0 0 0 black;
+        cursor: pointer;
 
         &:hover {
             transform: scale(1.02) translateX(3px);

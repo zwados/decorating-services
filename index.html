@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bygg Med Wojtek &mdash; professional carpentry, decorating, renovations</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -69,8 +69,9 @@
                         </svg>
                         <div class="details__text-box">
                             <span class="details__title">Working Hours</span>
-                            <span class="details__span details__span--up">Stockholm, Uppsala</span>
-                            <span class="details__span details__span--down">All districts and suburbs</span>
+                            <span class="details__span details__span--up">6-22 Mon-Sat</span>
+                            <span class="details__span details__span--down">Working hours adjusted to client's
+                                preferences</span>
                         </div>
                     </div>
                     <div class="details__item">
@@ -79,8 +80,8 @@
                         </svg>
                         <div class="details__text-box">
                             <span class="details__title">Contact</span>
-                            <span class="details__span details__span--up">Stockholm, Uppsala</span>
-                            <span class="details__span details__span--down">All districts and suburbs</span>
+                            <span class="details__span details__span--up">wojtek@byggmedwojtek.se</span>
+                            <span class="details__span details__span--down">Mobile: +46 231 421 2123</span>
                         </div>
                     </div>
                 </div>
@@ -209,16 +210,20 @@
                 <div class="offer__text">
                     <h3 class="header-tertiary">Your house is in good hands</h3>
                     <p class="offer__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates tempora nulla laboriosam
-                        hic neque rerum perferendis quae, dolorum libero quaerat facilis quibusdam optio ipsam corporis,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates tempora nulla
+                        laboriosam
+                        hic neque rerum perferendis quae, dolorum libero quaerat facilis quibusdam optio ipsam
+                        corporis,
                         pariatur, labore iusto mollitia?
                     </p>
                     <p class="offer__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates tempora nulla laboriosam
-                        hic neque rerum perferendis quae, dolorum libero quaerat facilis quibusdam optio ipsam corporis,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates tempora nulla
+                        laboriosam
+                        hic neque rerum perferendis quae, dolorum libero quaerat facilis quibusdam optio ipsam
+                        corporis,
                         pariatur, labore iusto mollitia?
                     </p>
-                    <a href="#" class="offer__btn btn-rounded btn-rounded--primary">Learn more</a>
+                    <a class="offer__btn btn-rounded btn-rounded--primary popup__button" id="myOffer">Learn more</a>
                 </div>
                 <div class="offer__image"></div>
 
@@ -234,27 +239,24 @@
                     <div class="form__row">
                         <div class="form__item form__item--1-of-2">
                             <label class="form__label" for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your first name here"
-                                class="form__input form__input--name">
+                            <input type="text" id="name" name="name" placeholder="Enter your first name here" class="form__input form__input--name">
                         </div>
                         <div class="form__item form__item--1-of-2">
                             <label class="form__label" for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email name here"
-                                class=" form__input form__input--email">
+                            <input type="email" id="email" name="email" placeholder="Enter your email name here" class=" form__input form__input--email">
                         </div>
                     </div>
                     <div class="form__row">
                         <div class="form__item form__item--1-of-1">
                             <label class="form__label" for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="What's on your mind?"
-                                class="form__input form__input--subject">
+                            <input type="text" id="subject" name="subject" placeholder="What's on your mind?" class="form__input form__input--subject">
                         </div>
                     </div>
                     <div class="form__row">
                         <div class="form__item form__item--1-of-1">
                             <label class="form__label" for="request">Your request</label>
-                            <textarea id="request" name="request" placeholder="Tell me more details"
-                                class="form__input form__input--request" rows="10"></textarea>
+                            <textarea id="request" name="request" placeholder="Tell me more details" class="form__input form__input--request"
+                                rows="10"></textarea>
                         </div>
                     </div>
                     <div class="form__row">
@@ -324,8 +326,50 @@
     <!--Experience-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupExperience">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+            <div class="popup popupstyle" id="popupExperience">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">My Experience</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="popup__text-content">
+                        <h3 class="popup__header">I've been in business for 15 years</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis ullam similique numquam
+                            facere
+                            voluptas nostrum esse. Laboriosam nam incidunt sunt nulla reiciendis tenetur quisquam
+                            deserunt, odit, omnis sequi quaerat at. Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. </p>
+                        <p>Nam doloremque aliquam facere totam natus quaerat nobis impedit, iste hic, quia laudantium
+                            animi ut magni! Tenetur repellendus maiores culpa repudiandae similique! </p> <img src="http://www.constructionworld.org/wp-content/uploads/2016/05/shutterstock_291031157.jpg"
+                            alt="engineer" class="popup__image">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            nam consequatur, ut, nihil ad enim dolore harum perspiciatis quo sit, voluptas nesciunt
+                            iste. Laborum itaque doloremque repellendus nobis, et minus.Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad enim dolore harum
+                            perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
+                            et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            nam consequatur, ut, nihil ad enim dolore harum perspiciatis quo sit, voluptas nesciunt
+                            iste. Laborum itaque doloremque repellendus nobis, et minus.Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad enim dolore harum
+                            perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
+                            et minus.</p>
+                        <div class="popup__btn-box">
+                            <a class="popup__btn btn-rounded btn-rounded--primary popup__button" id="myOffer">Learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -333,27 +377,133 @@
     <!--Experience-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupOffer">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+            <div class="popup popupstyle" id="popupOffer">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">My Offer</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="popup__text-content">
+                        <h3 class="popup__header">Complex service from the trusted professional</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis ullam similique numquam
+                            facere
+                            voluptas nostrum esse. Laboriosam nam incidunt sunt nulla reiciendis tenetur quisquam
+                            deserunt, odit, omnis sequi quaerat at. Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. </p>
+                        <p>Nam doloremque aliquam facere totam natus quaerat nobis impedit, iste hic, quia laudantium
+                            animi ut magni! Tenetur repellendus maiores culpa repudiandae similique! </p> <img src="https://assets.entrepreneur.com/images/misc/1500455220_2.jpg"
+                            alt="engineer" class="popup__image">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            nam consequatur, ut, nihil ad enim dolore harum perspiciatis quo sit, voluptas nesciunt
+                            iste. Laborum itaque doloremque repellendus nobis, et minus.Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad enim dolore harum
+                            perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
+                            et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            nam consequatur, ut, nihil ad enim dolore harum perspiciatis quo sit, voluptas nesciunt
+                            iste. Laborum itaque doloremque repellendus nobis, et minus.Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad enim dolore harum
+                            perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
+                            et minus.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!--History-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupHistory">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+            <div class="popup popupstyle" id="popupHistory">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">My story</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="popup__text-content">
+                        <h3 class="popup__header">The long way to become a professional in multiple fields</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis ullam similique numquam
+                            facere
+                            voluptas nostrum esse. Laboriosam nam incidunt sunt nulla reiciendis tenetur quisquam
+                            deserunt, odit, omnis sequi quaerat at. Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. </p>
+                        <p>Nam doloremque aliquam facere totam natus quaerat nobis impedit, iste hic, quia laudantium
+                            animi ut magni! Tenetur repellendus maiores culpa repudiandae similique! </p> <img src="http://chelmski.eu/wp-content/uploads/2017/07/construction-site-build-construction-work-159306.jpeg"
+                            alt="engineer" class="popup__image">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            nam consequatur, ut, nihil ad enim dolore harum perspiciatis quo sit, voluptas nesciunt
+                            iste. Laborum itaque doloremque repellendus nobis, et minus.Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad enim dolore harum
+                            perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
+                            et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad
+                            enim dolore harum perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque
+                            repellendus nobis, et minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            nam consequatur, ut, nihil ad enim dolore harum perspiciatis quo sit, voluptas nesciunt
+                            iste. Laborum itaque doloremque repellendus nobis, et minus.Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nisi nam consequatur, ut, nihil ad enim dolore harum
+                            perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
+                            et minus.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!--PROJECTS SECTION-->
     <!--Decorations-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupDecorations">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+            <div class="popup popupstyle" id="popupDecorations">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">Decorations - image gallery</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="gallery" id="decorationsGallery">
+                        <div class="gallery__main-img-container">
+                            <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
+                        </div>
+                        <div class="gallery__bottom-line">
+                            <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
+                            <div class="gallery__slider" id="decorationsSlider">
+                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                            </div>
+                            <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -361,8 +511,36 @@
     <!--Bricks-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupBricks">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+            <div class="popup popupstyle" id="popupBricks">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">Brick laying - image gallery</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="gallery" id="bricksGallery">
+                        <div class="gallery__main-img-container">
+                            <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
+                        </div>
+                        <div class="gallery__bottom-line">
+                            <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
+                            <div class="gallery__slider" id="bricksSlider">
+                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                            </div>
+                            <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -370,8 +548,36 @@
     <!--Painting-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupPainting">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+            <div class="popup popupstyle" id="popupPainting">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">Painting - image gallery</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="gallery" id="paintingGallery">
+                        <div class="gallery__main-img-container">
+                            <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
+                        </div>
+                        <div class="gallery__bottom-line">
+                            <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
+                            <div class="gallery__slider" id="paintingSlider">
+                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                            </div>
+                            <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -379,8 +585,36 @@
     <!--Renovating-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupRenovating">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+            <div class="popup popupstyle" id="popupRenovating">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">Renovations - image gallery</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="gallery" id="renovatingGallery">
+                        <div class="gallery__main-img-container">
+                            <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
+                        </div>
+                        <div class="gallery__bottom-line">
+                            <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
+                            <div class="gallery__slider" id="renovatingSlider">
+                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                            </div>
+                            <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -389,7 +623,35 @@
     <div class="modalbox">
         <div class="modal">
             <div class="popup" id="popupTiling">
-                <i class="far fa-times-circle popup__exit-icon"></i>
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">Tiling - image gallery</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="gallery" id="tilingGallery">
+                        <div class="gallery__main-img-container">
+                            <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
+                        </div>
+                        <div class="gallery__bottom-line">
+                            <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
+                            <div class="gallery__slider" id="tilingSlider">
+                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                            </div>
+                            <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -397,14 +659,53 @@
     <!--Carpentry-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup" id="popupCarpentry">
+            <div class="popup popupstyle" id="popupCarpentry">
+                <div class="popup__control-panel">
+                    <i class="far fa-times-circle popup__exit-icon"></i>
+                    <h2 class="popup__title">Carpentry - image gallery</h2>
+                </div>
+                <div class="popup__content">
+                    <div class="gallery" id="carpentryGallery">
+                        <div class="gallery__main-img-container">
+                            <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
+                        </div>
+                        <div class="gallery__bottom-line">
+                            <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
+                            <div class="gallery__slider" id="carpentrySlider">
+                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
+                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                            </div>
+                            <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--OFFER SECTION-->
+    <div class="modalbox">
+        <div class="modal">
+            <div class="popup popupstyle" id="popupSectionOffer">
                 <i class="far fa-times-circle popup__exit-icon"></i>
             </div>
         </div>
     </div>
 
 
+
     <script src="scripts/popup.js"></script>
+    <script src="scripts/gallery.js"></script>
     <script src="scripts/scrollTo.js"></script>
     <script src="scripts/elementAppear.js"></script>
     <script src="scripts/navigation.js"></script>
