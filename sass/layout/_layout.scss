@@ -8,6 +8,10 @@
     width: 90%;
     transition: .2s all ease-in-out;
 
+    @include md {
+        width: 100%;
+    }
+
 }
 
 .flex-row {

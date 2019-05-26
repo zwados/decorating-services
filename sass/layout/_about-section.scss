@@ -10,6 +10,9 @@
     &__box {
         display: flex;
         @include flexContainer;
+        @include sm {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -17,8 +20,11 @@
         flex-direction: column;
         padding: 3rem;
         align-items: center;
+        @include sm {
+            max-width: 60rem;
+        }
 
-        @include hideElement;
+        
     }
 
     &__image-container {

@@ -6,6 +6,11 @@
     margin-top: 3rem;
     width: 80rem;
 
+    @include sm {
+        padding: 3rem 0;
+        width: 90%;
+    }
+
     &__box {
         display: flex;
         flex-direction: column;

@@ -12,6 +12,20 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @include lg {
+        font-size: 60%;
+    }
+
+    @include md {
+        font-size: 57.5%;
+    }
+
+    @include sm {
+        font-size: 52.25%;
+    }
+
+
 }
 
 body {
@@ -21,8 +35,11 @@ body {
     color: $color-secondary;
     background-color: $color-secondary;
     background-repeat: no-repeat;
-    min-height: 100vh;
     margin: 0 5%;
+
+    @include md {
+        margin: 0;
+    }
 
     &::-webkit-scrollbar {
         height: 1rem;
@@ -35,6 +52,8 @@ body {
       outline: 1px solid $color-secondary;
       border-radius: 3rem;
     }
+
+    
 
     &>* {
         box-shadow: 0 1.5px 3px $color-secondary;

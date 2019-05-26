@@ -87,17 +87,20 @@
 // details
 
 .details {
-    justify-self: flex-end;
     margin-top: 7rem;
 
     &__box {
         display: flex;
-        @include flexContainer;
+       
         margin-bottom: 7rem;
         border-radius: 3px;
         background-color: $color-grey-light;
         overflow: hidden;
         box-shadow: 0 0 2rem $color-secondary;
+
+        @include sm {
+            margin-bottom: -3rem;
+        }
 
     }
 
@@ -108,6 +111,10 @@
 
         &:not(:last-child) {
             border-right: 2px solid $color-grey-medium;
+        }
+
+        @include sm {
+            padding: .5rem;
         }
 
         &>* {
@@ -128,6 +135,10 @@
         text-transform: uppercase;
         color: $color-secondary;
         font-weight: 800;
+
+        @include sm {
+            font-size: 1.1rem;
+        }
     }
 
     &__span {
@@ -135,10 +146,26 @@
             font-size: 1.3rem;
             font-weight: 600;
             color: $color-tertiary;
+           
+            @include md {
+                font-size: 1.1rem;
+            }
+           
+            @include xs {
+                font-size: .9rem;
+            }
         }
 
         &--down {
             font-size: 1.2rem;
+
+            @include md {
+                font-size: 1rem;
+            }
+
+            @include xs {
+                font-size: .8rem;
+            }
         }
     }
 
@@ -158,5 +185,17 @@
         animation: pulsate infinite 2s;
         animation-timing-function: linear;
         animation-delay: 2s;
+
+        @include md {
+        height: 5rem;
+        width: 5rem;
+        margin: 1.5rem;
+        }
+
+        @include xs {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: 1rem;
+        }
     }
 }

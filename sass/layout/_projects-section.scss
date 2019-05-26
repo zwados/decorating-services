@@ -21,6 +21,8 @@
         &>* {
             border-radius: 3px;
         }
+
+
     }
 
     &__icon {
@@ -33,24 +35,46 @@
         animation: pulsateStrong infinite 1s;
         animation-timing-function: linear;
         animation-delay: 2s;
+        transition: .2s linear;
+
+        @include sm {
+            fill: $color-primary;
+            height: 2.5rem;
+            width: 2.5rem;
+            margin: 1.5rem;
+        }
     }
 
     &__item {
         width: 30%;
-        height: 20rem;
+        height: 25rem;
         margin-top: 3rem;
         background-size: cover;
         box-shadow: $shadow-light;
         position: relative;
 
-        @include hideElement;
+        @include sm {
+            width: 45%;
+            height: 20rem;
+        }
+
+        @include xs {
+            max-width: 30rem;
+            height: 15rem;
+            
+        }
+
+       
 
         &:hover>.projects__item-description {
             animation: showDescription .5s forwards linear;
+            @include sm {
+                animation: none;
+            }
         }
 
         &:hover>.projects__icon {
-            display: none;
+            opacity: 0;
         }
 
         &--1 {
@@ -89,8 +113,17 @@
         justify-content: center;
         overflow: hidden;
 
+        @include sm {
+            background-image: linear-gradient(120deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)70%, rgba(0, 0, 0, 0)70%);
+        height: 100%;
+        width: 100%;
+        }
+
         &>* {
             opacity: 0;
+            @include sm {
+                opacity: 1;
+            }
         }
 
         &:hover>* {
