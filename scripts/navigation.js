@@ -1,5 +1,3 @@
-
-
 const navigation = document.querySelector('.navigation');
 let lastScrollTop = 0;
 
@@ -52,11 +50,14 @@ navigationBurger.addEventListener('click', () => {
 
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 992) {
+        isBurgerActive = true;
         navigationList.style.transform = `translateY(0px)`;
         navigationItems.forEach((item) => {
             item.style.opacity = 1;
         })
     } else {
+        isBurgerActive = true;
+        navigation.style.overflow = 'visible';
         navigationList.style.transform = `translateY(${-1.2 * (navigationList.offsetHeight + navigation.offsetHeight)}px)`;
         navigationItems.forEach((item) => {
             item.style.opacity = 0;

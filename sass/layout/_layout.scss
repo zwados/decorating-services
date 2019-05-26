@@ -37,6 +37,11 @@
 
     max-width: 80rem;
     margin-top: 16rem;
+
+    @include md {
+        margin-top: 12rem;
+        padding: 0 2rem;
+    }
 }
 
 .section-about {

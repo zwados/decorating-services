@@ -8,6 +8,10 @@
     &__row {
         display: flex;
         justify-content: space-evenly;
+
+        @include md {
+            flex-direction: column;
+        }
     }
 
     &__item {
