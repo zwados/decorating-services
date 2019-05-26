@@ -30,6 +30,21 @@
     opacity: 0;
     transition: all 1s ease;
 
+    @include md {
+        top: 30%;
+        left: 30%;
+        transform: translate(-30%, -30%);
+        width: 90%;
+    }
+
+    @include sm {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        
+    }
+
     &__exit-icon {
         color: #efefef;
         order: 2;
@@ -64,10 +79,18 @@
         padding: 2rem;
         font-size: 1.3rem;
         justify-self: center;
+        overflow-x: hidden;
+        @include sm {
+            overflow-y: scroll;
+        }
     }
 
     &__text-content {
         column-count: 2;
+
+        @include sm {
+            column-count: 1;
+        }
 
         &>* {
             margin: 1rem 1rem;
