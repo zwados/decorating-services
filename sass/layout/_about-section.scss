@@ -1,5 +1,5 @@
 .about {
-    margin: 7rem 0;
+    margin: 9rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -9,6 +9,7 @@
 
     &__box {
         display: flex;
+        @include hideElement;
         @include flexContainer;
         @include sm {
             flex-direction: column;

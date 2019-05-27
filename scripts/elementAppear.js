@@ -1,3 +1,6 @@
+//To make scrollAppear function work, add class 'appear' to a chosen element and @include hideElement in your relevant sass file.
+
+
 const elements = document.querySelectorAll('.appear');
 const screenPosition = window.innerHeight;
 

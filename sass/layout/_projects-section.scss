@@ -47,11 +47,14 @@
 
     &__item {
         width: 30%;
-        height: 25rem;
+        height: 20rem;
         margin-top: 3rem;
         background-size: cover;
         box-shadow: $shadow-light;
         position: relative;
+        background-position: center;
+
+        @include hideElement;
 
         @include sm {
             width: 45%;

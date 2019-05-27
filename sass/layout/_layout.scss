@@ -59,6 +59,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include md {
+        padding: 2rem 0;
+    }
 }
 
 .section-offer {
@@ -68,6 +72,10 @@
     justify-content: center;
     align-items: center;
     padding: 9rem 0;
+
+    @include md {
+        padding: 5rem 0 0 0;
+    }
 }
 
 .section-cta {
@@ -80,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 9rem 0;
+    padding: 7rem 0;
 }
 
 .section-footer {

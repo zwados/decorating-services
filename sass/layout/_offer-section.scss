@@ -18,6 +18,15 @@
         flex-direction: column;
         margin-right: 1rem;
         flex-basis: 80rem;
+
+        &>* {
+            @include hideElement;
+        }
+
+        @include sm {
+            margin-right: 0;
+            flex-basis: auto;
+        }
     }
 
     &__paragraph {
@@ -37,6 +46,15 @@
         background-image: url("../img/carpentry.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: $shadow-light;
+        box-shadow: $shadow-light; 
+        @include hideElement;
+
+        @include md {
+            width: 80%;
+        }
+
+        @include sm {
+            display: none;
+        }
     }
 }
