@@ -37,3 +37,9 @@ $screen-lg-max: 1200px;
         @content;
     }
  }
+
+ @mixin mobile {
+    @media (pointer:none), (pointer:coarse) {
+        @content;
+    }
+ }

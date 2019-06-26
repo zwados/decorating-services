@@ -77,3 +77,16 @@ const PaintingGallery = new Gallery('#paintingGallery');
 const RenovatingGallery = new Gallery('#renovatingGallery');
 const TilingGallery = new Gallery('#tilingGallery');
 const CarpentryGallery = new Gallery('#carpentryGallery');
+
+//Orientation icon
+
+const rotateIcons = document.querySelectorAll('.rotate-icon__box');
+
+window.addEventListener("orientationchange", function () {
+    console.log("the orientation of the device is now " + screen.orientation.angle);
+    if (this.screen.orientation.angle === 90) {
+        rotateIcons.forEach(icon => icon.style.display = "none")
+    } else if (this.screen.orientation.angle === 0) {
+        rotateIcons.forEach(icon => icon.style.display = "flex")
+    }
+});
