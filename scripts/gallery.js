@@ -72,10 +72,10 @@ class Gallery {
 
 // Gallery constructor instances
 const DecorationsGallery = new Gallery('#decorationsGallery');
-const BricksGallery = new Gallery('#bricksGallery');
-const PaintingGallery = new Gallery('#paintingGallery');
-const RenovatingGallery = new Gallery('#renovatingGallery');
-const TilingGallery = new Gallery('#tilingGallery');
+const ConstructionsGallery = new Gallery('#constructionsGallery');
+//const PaintingGallery = new Gallery('#paintingGallery');
+//const RenovatingGallery = new Gallery('#renovatingGallery');
+//const TilingGallery = new Gallery('#tilingGallery');
 const CarpentryGallery = new Gallery('#carpentryGallery');
 
 //Orientation icon

@@ -9,6 +9,11 @@ class Popup {
 
         const buttons = document.querySelectorAll('.popup__button');
         const exitBtns = document.querySelectorAll('.popup__exit-icon');
+        const popupButtons = document.querySelectorAll('.close-modal');
+
+        popupButtons.forEach((popupButton) => {
+            popupButton.addEventListener('click', () => this.hideModalBox())
+        });
 
 
         buttons.forEach((button) => {
@@ -59,10 +64,10 @@ const History = new Popup('popupHistory', 'history');
 // Projects Section Object Instances
 
 const Decorations = new Popup('popupDecorations', 'decorations');
-const Bricks = new Popup('popupBricks', 'bricks');
-const Painting = new Popup('popupPainting', 'painting');
-const Renovating = new Popup('popupRenovating', 'renovating');
-const Tiling = new Popup('popupTiling', 'tiling');
+const Bricks = new Popup('popupConstructions', 'constructions');
+//const Painting = new Popup('popupPainting', 'painting');
+//const Renovating = new Popup('popupRenovating', 'renovating');
+//const Tiling = new Popup('popupTiling', 'tiling');
 const Carpentry = new Popup('popupCarpentry', 'carpentry');
 
 // Offer Section Object Instances

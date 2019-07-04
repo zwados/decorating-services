@@ -23,11 +23,11 @@
                 </div>
             </div>
             <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link menu">Home</a></li>
-                <li class="navigation__item"><a class="navigation__link menu">About</a></li>
-                <li class="navigation__item"><a class="navigation__link menu">Projects</a></li>
-                <li class="navigation__item"><a class="navigation__link menu">Offer</a></li>
-                <li class="navigation__item"><a class="navigation__link navigation__link--btn menu">Contact</a>
+                <li class="navigation__item"><a class="navigation__link menu" href="#home">Home</a></li>
+                <li class="navigation__item"><a class="navigation__link menu" href="#about">About</a></li>
+                <li class="navigation__item"><a class="navigation__link menu" href="#project">Projects</a></li>
+                <li class="navigation__item"><a class="navigation__link menu" href="#offers">Offer</a></li>
+                <li class="navigation__item"><a class="navigation__link navigation__link--btn menu" href="#contact">Contact</a>
             </ul>
             <div class="navigation__burger"><i class="fas fa-bars"></i></div>
         </nav>
@@ -48,7 +48,8 @@
                         Est
                         facere exercitationem quibusdam quia! Maxime quam possimus vero, quidem nemo facilis quisquam
                         expedita, animi error sunt quas, commodi omnis voluptas </p>
-                    <a href="#" class="header-description__btn"><span>Tell us about your plan</span></a>
+                    <a href="#section-about" id="introBtn" class="header-description__btn"><span>Tell us about your
+                            plan</span></a>
                 </div>
             </header>
             <div class="details">
@@ -88,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section class="section-about scrollTo">
+    <section id="section-about" class="section-about scrollTo">
         <div class="about">
             <h2 class="about__title header-secondary appear">About Bygg Med Wojtek</h2>
             <div class="about__box appear">
@@ -96,7 +97,7 @@
                     <div class="about__image-container">
                         <img src="img/logo.png" alt="" class="about__image">
                     </div>
-                    <h3 class="header-tertiary">Who we are</h3>
+                    <h3 class="header-tertiary">About me</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos
                         voluptate blanditiis tempora modi inventore asperiores, maiores quaerat sapiente corrupti optio
                         aliquam atque cum libero error qui nobis deleniti ab?</p>
@@ -107,7 +108,7 @@
                     <div class="about__image-container">
                         <img src="img/logo.png" alt="" class="about__image">
                     </div>
-                    <h3 class="header-tertiary">What we do</h3>
+                    <h3 class="header-tertiary">What I do</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos
                         voluptate blanditiis tempora modi inventore asperiores, maiores quaerat sapiente corrupti optio
                         aliquam atque cum libero error qui nobis deleniti ab?</p>
@@ -118,17 +119,17 @@
                     <div class="about__image-container">
                         <img src="img/logo.png" alt="" class="about__image">
                     </div>
-                    <h3 class="header-tertiary">How we do it</h3>
+                    <h3 class="header-tertiary">How I do it</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos
                         voluptate blanditiis tempora modi inventore asperiores, maiores quaerat sapiente corrupti optio
                         aliquam atque cum libero error qui nobis deleniti ab?</p>
-                    <a class="about__btn popup__button" id="history">Our History &rarr;</a>
+                    <a class="about__btn popup__button" id="history">My tools &rarr;</a>
                 </div>
             </div>
 
         </div>
     </section>
-    <section class="section-projects scrollTo">
+    <section id="projects-section" class="section-projects scrollTo">
         <div class="projects">
             <h2 class="projects__title header-secondary appear">View my projects</h2>
             <div class="projects__box">
@@ -149,11 +150,12 @@
                     </svg>
                     <div class="projects__item-description">
                         <h3 class="header-tertiary header-tertiary--light projects__gallery-title">
-                            Bricks
+                            Constructions
                         </h3>
-                        <a class="btn-rounded btn-rounded--light popup__button" id="bricks">gallery</a>
+                        <a class="btn-rounded btn-rounded--light popup__button" id="constructions">gallery</a>
                     </div>
                 </div>
+                <!--
                 <div class="projects__item projects__item--3 appear">
                     <svg class="projects__icon">
                         <use xlink:href="img/sprite.svg#icon-camera1"></use>
@@ -187,6 +189,7 @@
                         <a class="btn-rounded btn-rounded--light popup__button" id="tiling">gallery</a>
                     </div>
                 </div>
+                -->
                 <div class="projects__item projects__item--6 appear">
                     <svg class="projects__icon">
                         <use xlink:href="img/sprite.svg#icon-camera1"></use>
@@ -203,7 +206,7 @@
 
         </div>
     </section>
-    <section class="section-offer scrollTo">
+    <section id="section-offer" class="section-offer scrollTo">
         <h2 class="header-secondary header-secondary--light appear">Wojtek's offer</h2>
         <div class="offer">
             <div class="offer__box">
@@ -230,7 +233,7 @@
             </div>
         </div>
     </section>
-    <section class="section-cta scrollTo">
+    <section id="contact" class="section-cta scrollTo">
         <div class="cta">
             <div class="cta__box">
                 <h2 class="cta__title header-secondary appear">Request a call back</h2>
@@ -284,31 +287,28 @@
                         <h2 class="header-tertiary header-tertiary--orange">About</h2>
                         <ul class="footer__links-list">
                             <li class="footer__link-item">
-                                <a href="#" class="footer__link">My story</a>
+                                <a href="#section-about" class="footer__link">My story</a>
                             </li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">My experience</a></li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">Working hours</a></li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">Where I work</a></li>
+                            <li class="footer__link-item"><a href="#section-about" class="footer__link">My experience</a></li>
+                            <li class="footer__link-item"><a href="#section-about" class="footer__link">What I do</a></li>
+                            <li class="footer__link-item"><a href="#section-about" class="footer__link">My toolset</a></li>
                         </ul>
                     </div>
                     <div class="footer__item">
                         <h2 class="header-tertiary header-tertiary--orange">Services</h2>
                         <ul class="footer__links-list">
                             <li class="footer__link-item">
-                                <a href="#" class="footer__link">My offer</a>
+                                <a href="#section-offer" class="footer__link">My offer</a>
                             </li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">Contact me</a></li>
+                            <li class="footer__link-item"><a href="#contact" class="footer__link">Contact me</a></li>
                         </ul>
                     </div>
                     <div class="footer__item">
                         <h2 class="header-tertiary header-tertiary--orange">Projects</h2>
                         <ul class="footer__links-list">
-                            <li class="footer__link-item"><a href="#" class="footer__link">decorating</a></li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">tiling</a></li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">painting</a></li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">carpentry</a></li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">bricklaying</a></li>
-                            <li class="footer__link-item"><a href="#" class="footer__link">renovating</a></li>
+                            <li class="footer__link-item"><a href="#projects-section" class="footer__link">decorating</a></li>
+                            <li class="footer__link-item"><a href="#projects-section" class="footer__link">constructions</a></li>
+                            <li class="footer__link-item"><a href="#projects-section" class="footer__link">carpentry</a></li>
                         </ul>
                     </div>
                 </div>
@@ -365,7 +365,8 @@
                             perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
                             et minus.</p>
                         <div class="popup__btn-box">
-                            <a class="popup__btn btn-rounded btn-rounded--primary popup__button" id="myOffer">Learn
+                            <a class="popup__btn btn-rounded btn-rounded--primary popup__button close-modal" id="myExperience"
+                                href="#projects-section">Learn
                                 more</a>
                         </div>
                     </div>
@@ -416,7 +417,8 @@
                             perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
                             et minus.</p>
                         <div class="popup__btn-box">
-                            <a class="popup__btn btn-rounded btn-rounded--primary popup__button" id="myOffer">Learn
+                            <a class="popup__btn btn-rounded btn-rounded--primary popup__button close-modal" href="#projects-section"
+                                id="myOffer">Learn
                                 more</a>
                         </div>
                     </div>
@@ -468,7 +470,8 @@
                             perspiciatis quo sit, voluptas nesciunt iste. Laborum itaque doloremque repellendus nobis,
                             et minus.</p>
                         <div class="popup__btn-box">
-                            <a class="popup__btn btn-rounded btn-rounded--primary popup__button" id="myOffer">Learn
+                            <a class="popup__btn btn-rounded btn-rounded--primary popup__button close-modal" href="#projects-section"
+                                id="myStory">Learn
                                 more</a>
                         </div>
                     </div>
@@ -490,17 +493,17 @@
                 <div class="popup__content">
                     <div class="gallery" id="decorationsGallery">
                         <div class="gallery__main-img-container">
-                            <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
+                            <img class="gallery__main-img" src="img/gallery/big/decorating-1-max.jpg" id="current">
                         </div>
                         <div class="gallery__bottom-line">
                             <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
                             <div class="gallery__slider" id="decorationsSlider">
-                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/decorating-1-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/decorating-2-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/floors-1-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/floors-5-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/floors-3-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/floors-4-max.jpg">
                                 <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
                                 <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
                                 <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
@@ -510,6 +513,10 @@
                             </div>
                             <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
                         </div>
+                    </div>
+                    <div class="rotate-icon__box">
+                        <h3 class="header-tertiary--orange">Rotate your mobile device for better experience</h3>
+                        <i class="fas fa-sync-alt rotate-icon"></i>
                     </div>
                 </div>
             </div>
@@ -519,34 +526,34 @@
     <!--Bricks-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup popup--gallery" id="popupBricks">
+            <div class="popup popup--gallery" id="popupConstructions">
                 <div class="popup__control-panel">
                     <i class="far fa-times-circle popup__exit-icon"></i>
-                    <h2 class="popup__title">Brick laying - image gallery</h2>
+                    <h2 class="popup__title">Constructions - image gallery</h2>
                 </div>
                 <div class="popup__content">
-                    <div class="gallery" id="bricksGallery">
+                    <div class="gallery" id="constructionsGallery">
                         <div class="gallery__main-img-container">
                             <img class="gallery__main-img" src="https://i.ibb.co/9NtFdcT/10.jpg" id="current">
                         </div>
                         <div class="gallery__bottom-line">
                             <i class="fas fa-chevron-circle-left gallery__arrow gallery__arrow--left"></i>
-                            <div class="gallery__slider" id="bricksSlider">
-                                <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                            <div class="gallery__slider" id="constructionsSlider">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-4-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-1-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-2-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-3-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-5-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-6-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/carpentry-1-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/carpentry-2-max.jpg">
                             </div>
                             <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
                         </div>
+                    </div>
+                    <div class="rotate-icon__box">
+                        <h3 class="header-tertiary--orange">Rotate your mobile device for better experience</h3>
+                        <i class="fas fa-sync-alt rotate-icon"></i>
                     </div>
                 </div>
             </div>
@@ -554,6 +561,7 @@
     </div>
 
     <!--Painting-->
+    <!--
     <div class="modalbox">
         <div class="modal">
             <div class="popup popup--gallery" id="popupPainting">
@@ -589,8 +597,10 @@
             </div>
         </div>
     </div>
+    -->
 
     <!--Renovating-->
+    <!--
     <div class="modalbox">
         <div class="modal">
             <div class="popup popup--gallery" id="popupRenovating">
@@ -626,8 +636,10 @@
             </div>
         </div>
     </div>
+-->
 
     <!--Tiling-->
+    <!--
     <div class="modalbox">
         <div class="modal">
             <div class="popup popup--gallery" id="popupTiling">
@@ -663,6 +675,7 @@
             </div>
         </div>
     </div>
+-->
 
     <!--Carpentry-->
     <div class="modalbox">
@@ -682,16 +695,14 @@
                             <div class="gallery__slider" id="carpentrySlider">
                                 <img class="gallery__miniature" src="https://i.ibb.co/0rnXCvB/5b.jpg">
                                 <img class="gallery__miniature" src="https://i.ibb.co/55mXsd4/5c.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/c3SyQjS/10a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/GMk33pM/9.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/pvc2b78/5d.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/4dSDGxq/11c.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/wpFd9c7/11a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/hmCPX7d/9a.jpg">
-                                <img class="gallery__miniature" src="https://i.ibb.co/9NtFdcT/10.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/carpentry-1-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/carpentry-2-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/carpentry-3-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/carpentry-4-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-6-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-1-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-2-max.jpg">
+                                <img class="gallery__miniature" src="img/gallery/big/construction-3-max.jpg">
                             </div>
                             <i class="fas fa-chevron-circle-right gallery__arrow gallery__arrow--right"></i>
                         </div>
@@ -699,7 +710,6 @@
                     <div class="rotate-icon__box">
                         <h3 class="header-tertiary--orange">Rotate your mobile device for better experience</h3>
                         <i class="fas fa-sync-alt rotate-icon"></i>
-
                     </div>
                 </div>
             </div>
@@ -709,7 +719,7 @@
     <!--OFFER SECTION-->
     <div class="modalbox">
         <div class="modal">
-            <div class="popup popup--gallery" id="popupSectionOffer">
+            <div class="popup popup--text" id="popupSectionOffer">
                 <div class="popup__control-panel">
                     <i class="far fa-times-circle popup__exit-icon"></i>
                     <h2 class="popup__title">Offer - let me see how I could help you</h2>

@@ -266,7 +266,7 @@ body {
         margin: 1.5rem; } }
   .projects__item {
     width: 30%;
-    height: 20rem;
+    height: 25rem;
     margin-top: 3rem;
     background-size: cover;
     box-shadow: 0 0rem 1rem #888;
@@ -277,12 +277,12 @@ body {
     transition: 1s all ease-in-out; }
     @media (max-width: 768px) {
       .projects__item {
-        width: 45%;
-        height: 20rem; } }
+        width: 80%;
+        height: 40rem; } }
     @media (max-width: 576px) {
       .projects__item {
-        max-width: 30rem;
-        height: 15rem; } }
+        max-width: 90%;
+        height: 40rem; } }
     .projects__item:hover > .projects__item-description {
       animation: showDescription .5s forwards linear; }
       @media (max-width: 768px) {
@@ -782,7 +782,11 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -2; }
+    z-index: -2;
+    object-position: center; }
+    @media (max-width: 768px) {
+      .header-video__content {
+        object-position: right; } }
 
 .header-description {
   display: flex;

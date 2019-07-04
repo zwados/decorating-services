@@ -13,6 +13,11 @@
         width: 100%;
         object-fit: cover;
         z-index: -2;
+        object-position: center;
+
+        @include sm {
+            object-position: right;
+        }
     }
 }
 

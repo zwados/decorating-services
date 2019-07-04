@@ -47,7 +47,7 @@
 
     &__item {
         width: 30%;
-        height: 20rem;
+        height: 25rem;
         margin-top: 3rem;
         background-size: cover;
         box-shadow: $shadow-light;
@@ -57,13 +57,13 @@
         @include hideElement;
 
         @include sm {
-            width: 45%;
-            height: 20rem;
+            width: 80%;
+            height: 40rem;
         }
 
         @include xs {
-            max-width: 30rem;
-            height: 15rem;
+            max-width: 90%;
+            height: 40rem;
             
         }
 
