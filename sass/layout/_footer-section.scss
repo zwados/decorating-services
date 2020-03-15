@@ -1,0 +1,58 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    @include flexContainer;
+
+    &__items-container {
+        display: flex;
+        flex: 0 1 80rem;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid $color-grey-medium;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &:first-of-type {
+            justify-content: center;
+
+            @include xs {
+                display: none;
+            }
+        }
+    }
+
+    &__item>.logo-box {
+        margin-right: 2rem;
+
+        @include lg {
+            margin-right: 0;
+        }
+    }
+
+    &__link-item {
+        list-style-type: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: inherit;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all ease-in-out .2s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__signature {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+}

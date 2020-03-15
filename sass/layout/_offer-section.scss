@@ -1,0 +1,60 @@
+.offer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: $shadow-light;
+    padding: 4rem;
+    border-radius: 3px;
+    margin-top: 3rem;
+
+    &__box {
+        display: flex;
+        @include flexContainer;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        flex-basis: 80rem;
+
+        &>* {
+            @include hideElement;
+        }
+
+        @include sm {
+            margin-right: 0;
+            flex-basis: auto;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__btn {
+        align-self: center;
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+    }
+
+    &__image {
+        display: flex;
+        width: 60%;
+        background-image: url("../img/carpentry.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: $shadow-light; 
+        @include hideElement;
+
+        @include md {
+            width: 80%;
+        }
+
+        @include sm {
+            display: none;
+        }
+    }
+}

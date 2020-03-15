@@ -1,0 +1,111 @@
+.navigation {
+    box-shadow: $shadow-light;
+
+    &__nav {
+        display: flex;
+        height: 7rem;
+        justify-content: center;
+        @include flexContainer;
+        width: 120rem;
+        position: relative;
+        
+
+        @include md {
+            justify-content: space-between;
+            z-index: 1500;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex: .75;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        @include md {
+            flex-direction: column;
+            position: absolute;
+            top: 7rem;
+            right: 0;
+            background-color: $color-grey-light;
+            transition: all .2s ease;
+        }
+    }
+
+    &__item {
+        @include md {
+            color: $color-secondary;
+            padding: 2rem;
+            transition: opacity .3s ease-in;
+        }
+    }
+
+    &__link {
+        box-sizing: content-box;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom .2s;
+        color: $color-secondary;
+        cursor: pointer;
+
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:target {
+            border-bottom: 2px solid $color-primary;
+
+        }
+
+    }
+
+
+    &__link--btn {
+        background-color: $color-primary;
+        color: $color-grey-light;
+        padding: 1rem 1.4rem;
+        font-size: 1.2rem;
+        border-radius: 3px;
+        box-shadow: $shadow-light;
+        transition: all .2s;
+
+
+        &:hover {
+            transform: translateY(-1px) scale(1.025);
+            box-shadow: 0 0.25rem 1rem #888;
+        }
+
+        &:target,
+        &:active {
+            transform: translateY(0.25px) scale(0.975);
+            box-shadow: 0 0rem 0.25rem #888;
+        }
+    }
+
+    &__burger {
+        align-self: center;
+        display: none;
+
+        @include md {
+            margin-right: 5rem;
+            display: block;
+            font-size: 3rem;
+            color: $color-secondary;
+            transition: all .2s ease-in-out;
+        }
+
+        &:hover {
+            color: $color-primary;
+            transform: translateY(-.1rem);
+        }
+
+        &:target,
+        &:active {
+            transform: translateY(.1rem);
+        }
+    }
+}

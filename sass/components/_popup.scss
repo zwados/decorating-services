@@ -1,0 +1,156 @@
+.modalbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    height: 100%;
+    width: 100%;
+}
+
+.modal {
+    background-image: radial-gradient(rgba($color-tertiary, 1), rgba($color-primary, .9), rgba($color-secondary, .9)90%, );
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey-light;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    opacity: 0;
+    transition: all 1s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &--text {
+        @include md {
+            top: 30%;
+            left: 30%;
+            transform: translate(-30%, -30%);
+            width: 90%;
+            height: 80%;
+        }
+
+        @include sm {
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+
+    &--gallery {
+        @include md {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+    
+        @include sm {
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+
+    &__exit-icon {
+        color: #efefef;
+        order: 2;
+        padding: 1rem;
+        font-size: 2.5rem;
+        transition: all .2s ease-in-out;
+        backface-visibility: hidden;
+        cursor: pointer;
+
+        &:active,
+        &:hover {
+            transform: rotate(360deg);
+            color: orangered;
+        }
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: #efefef;
+        align-self: center;
+    }
+
+    &__control-panel {
+        display: flex;
+        justify-content: space-between;
+        background-color: #343434;
+        padding-left: 3rem;
+    }
+
+    &__content {
+        padding: 2rem;
+        font-size: 1.3rem;
+        justify-self: center;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            height: .5rem;
+            width: .2rem;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-primary;
+          outline: 1px solid $color-secondary;
+          border-radius: 3rem;
+        }
+    }
+
+    &__text-content {
+        column-count: 2;
+
+        @include sm {
+            column-count: 1;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+
+        &>* {
+            margin: 1rem 1rem;
+        }
+    }
+
+    &__image {
+        box-shadow: $shadow-light;
+        width: 95%;
+        border-radius: 3px;
+    }
+
+    &__btn-box {
+        margin-top: 2rem;
+        display: flex;
+        height: 100%;
+    }
+
+    &__btn {
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+

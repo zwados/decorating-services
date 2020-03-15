@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @include lg {
+        font-size: 60%;
+    }
+
+    @include md {
+        font-size: 57.5%;
+    }
+
+    @include sm {
+        font-size: 52.25%;
+    }
+
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $color-secondary;
+    background-color: $color-secondary;
+    background-repeat: no-repeat;
+    margin: 0 5%;
+
+    @include md {
+        margin: 0;
+    }
+
+    &::-webkit-scrollbar {
+        height: 1rem;
+        width: .5rem;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-primary;
+      outline: 1px solid $color-secondary;
+      border-radius: 3rem;
+    }
+
+    
+
+    &>* {
+        box-shadow: 0 1.5px 3px $color-secondary;
+    }
+}

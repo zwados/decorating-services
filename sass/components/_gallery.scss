@@ -1,0 +1,130 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    &__main-img-container {
+        justify-content: center;
+        display: flex;
+
+        &>img {
+            width: auto;
+            height: 25em;
+
+            @include mobile {
+                height: 38vw;
+            }
+
+
+        }
+    }
+
+    &__bottom-line {
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+
+        &>i {
+            font-size: 4rem;
+
+            &:hover {
+                color: $color-primary;
+            }
+
+        }
+
+        @include mobile {
+            margin-top: 0;
+        }
+
+    }
+
+    &__arrow {
+        cursor: pointer;
+        &--left {
+            margin-right: 1rem
+        }
+
+        &--right {
+            margin-left: 1.4rem;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__slider {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        cursor: grabbing;
+        padding-bottom: .4rem;
+
+        &::-webkit-scrollbar {
+            height: 1rem;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-primary;
+          outline: 1px solid $color-secondary;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            padding-bottom: 0;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 38vw;
+            max-height: 40rem;
+        }
+    }
+
+    &__slider>img {
+        height: 12rem;
+        border: 4px transparent solid;
+
+        &:not(:last-of-type) {
+            margin-right: .5rem;
+        }
+
+        &:hover {
+            border: 4px $color-primary solid;
+        }
+
+        @include mobile {
+            height: 10rem;
+            border: 2px transparent solid;
+        }
+
+        @include sm {
+         height: 10rem;       
+        }
+    }
+}
+
+
+.rotate-icon {
+    font-size: 5rem;
+    animation: rotate infinite 2s;
+    transition: ease;
+    backface-visibility: hidden;
+
+    &__box {
+        display: none;
+
+        @include mobile {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: center;
+            width: 30rem;
+            margin: 0 auto;
+        }
+    }
+}

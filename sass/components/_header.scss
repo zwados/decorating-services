@@ -1,0 +1,206 @@
+// background video
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -2;
+        object-position: center;
+
+        @include sm {
+            object-position: right;
+        }
+    }
+}
+
+//HERO SECTION DESCRIPTION
+
+.header-description {
+    display: flex;
+    flex-direction: column;
+    color: $color-grey-light;
+
+    &>* {
+        margin: 1.5rem 0;
+    }
+
+    &__paragraph {
+        font-size: 1.8rem;
+    }
+
+    &__btn {
+        display: inline-block;
+        position: relative;
+        background-color: $color-grey-light;
+        font-size: 1.8rem;
+        align-self: center;
+        margin: 2rem;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        box-shadow: 0 0 2rem $color-secondary;
+        border-radius: 3px;
+        overflow: hidden;
+
+
+        span {
+            transition-delay: .1s;
+        }
+
+
+        &:hover span {
+            position: relative;
+            color: $color-grey-light;
+        }
+
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-secondary;
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -1px;
+            background-color: $color-secondary;
+            height: 104%;
+            width: 0%;
+            transition: all .2s ease-in;
+
+        }
+
+        &:hover::before,
+        &:active::before {
+            width: 101.5%;
+            color: $color-grey-light;
+            visibility: visible;
+        }
+    }
+}
+
+// details
+
+.details {
+    margin-top: 7rem;
+
+    &__box {
+        display: flex;
+       
+        margin-bottom: 7rem;
+        border-radius: 3px;
+        background-color: $color-grey-light;
+        overflow: hidden;
+        box-shadow: 0 0 2rem $color-secondary;
+
+        @include sm {
+            margin-bottom: -3rem;
+        }
+
+    }
+
+    &__item {
+        flex: 0 0 33.33333%;
+        display: flex;
+        padding: 1.5rem;
+
+        &:not(:last-child) {
+            border-right: 2px solid $color-grey-medium;
+        }
+
+        @include sm {
+            padding: .5rem;
+        }
+
+        &>* {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+
+    &__text-box {
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $color-secondary;
+        font-weight: 800;
+
+        @include sm {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__span {
+        &--up {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $color-tertiary;
+           
+            @include md {
+                font-size: 1.1rem;
+            }
+           
+            @include xs {
+                font-size: .9rem;
+            }
+        }
+
+        &--down {
+            font-size: 1.2rem;
+
+            @include md {
+                font-size: 1rem;
+            }
+
+            @include xs {
+                font-size: .8rem;
+            }
+        }
+    }
+
+    &__item:hover>* {
+        animation: none;
+        transform: scale(1.05) translateY(-3px);
+        transition: .2s all;
+
+    }
+
+    &__icon {
+        fill: $color-primary;
+        height: 7rem;
+        width: 7rem;
+        display: inline-block;
+        margin: 2rem;
+        animation: pulsate infinite 2s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+
+        @include md {
+        height: 5rem;
+        width: 5rem;
+        margin: 1.5rem;
+        }
+
+        @include xs {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: 1rem;
+        }
+    }
+}

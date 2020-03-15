@@ -1,0 +1,39 @@
+.logo {
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+
+
+
+        @include lg {
+            margin-right: 20rem;
+        }
+        @include md {
+            justify-content: center;
+            margin-left: 5rem;
+            margin-right: 0;
+        }
+
+    }
+
+    &__image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+
+        &--up {
+            font-size: 2rem;
+        }
+
+        &--down {
+            font-size: 1rem;
+        }
+    }
+}

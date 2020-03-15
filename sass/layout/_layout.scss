@@ -1,0 +1,101 @@
+.navigation {
+    font-size: 1.4rem;
+    background-color: $color-grey-light;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    transition: .2s all ease-in-out;
+
+    @include md {
+        width: 100%;
+    }
+
+}
+
+.flex-row {
+    width: 100%;
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+}
+
+.hero {
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(180deg, rgba($color-primary, 1), rgba($color-secondary, .7));
+
+    }
+}
+
+.header {
+
+    max-width: 80rem;
+    margin-top: 16rem;
+
+    @include md {
+        margin-top: 12rem;
+        padding: 0 2rem;
+    }
+}
+
+.section-about {
+    background-color: $color-grey-light;
+    display: flex;
+    justify-content: center;
+}
+
+.section-projects {
+    display: flex;
+    justify-content: center;
+    padding: 9rem 0;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(#323232, .8), rgba(#323232, .8)), url(../img/projects-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include md {
+        padding: 2rem 0;
+    }
+}
+
+.section-offer {
+    background-image: radial-gradient(rgba($color-secondary, 1), rgba(#6e6e6e, .5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9rem 0;
+
+    @include md {
+        padding: 5rem 0 0 0;
+    }
+}
+
+.section-cta {
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(#323232, .8), rgba(#323232, .8)), url(../img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: $color-secondary;
+    color: $color-grey-light;
+}
